@@ -1,0 +1,20 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+      - "*.x.x"
+      - "*.*.x"
+  workflow_dispatch:
+
+jobs:
+  release-please:
+    timeout-minutes: 1
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: googleapis/release-please-action@v4
