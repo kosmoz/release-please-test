@@ -1,7 +1,12 @@
 package main
 
-import "log"
+import (
+	"go.uber.org/zap"
+)
+
+var log = zap.Must(zap.NewDevelopment())
 
 func main() {
-	log.Println("Hello world")
+	defer func() { _ = log.Sync() }()
+	log.Info("Hello World")
 }
