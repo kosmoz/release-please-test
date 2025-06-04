@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/kosmoz/release-please-test/compare/1.0.0...1.0.1) (2025-06-04)
+
+
+### Bug Fixes
+
+* add exclamation mark ([62cc430](https://github.com/kosmoz/release-please-test/commit/62cc4303019158e7e55c6ea34acdb1227bf84d9b))
+
 ## 1.0.0 (2025-06-04)
 
 
