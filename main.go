@@ -8,5 +8,5 @@ var log = zap.Must(zap.NewDevelopment())
 
 func main() {
 	defer func() { _ = log.Sync() }()
-	log.Info("Hello World")
+	log.Info("Hello World!")
 }
